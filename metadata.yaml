@@ -1,5 +1,5 @@
 homepage: "https://www.120feet.com"
-documentation: "https://www.120feet.com/?p=652&preview=true"
+documentation:
 versions:
     - sha: 6088fffe7056fa62f2eab8e7354b03ce356df76f
       changeNotes: Initial Release
