@@ -1,5 +1,9 @@
 homepage: "https://www.120feet.com"
-documentation:
+documentation: "https://www.120feet.com/2020/04/20/encrypt-user-ids-and-pii-in-your-gtm-tags-cryptome/"
 versions:
+    # Latest Version
+    -sha: ac8fab6194d644ce86635e999039b2d259089350
+      changeNotes: Fox bug with additional properties causing exception error
+    # Older Versions
     - sha: 6088fffe7056fa62f2eab8e7354b03ce356df76f
       changeNotes: Initial Release
