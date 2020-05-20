@@ -11,7 +11,7 @@ ___INFO___
 {
   "type": "TAG",
   "id": "cvt_temp_public_id",
-  "version": 1,
+  "version": 1.1,
   "securityGroups": [],
   "displayName": "CryptoMe",
   "categories":["UTILITY", "TAG_MANAGEMENT", "PERSONALIZATION"],
@@ -86,7 +86,12 @@ ___TEMPLATE_PARAMETERS___
         "type": "EQUALS"
       }
     ],
-    "help": "Enter the key value pairs for any other data points you want to pass in the event"
+    "help": "Enter the key value pairs for any other data points you want to pass in the event",
+    "valueValidators": [
+      {
+        "type": "NON_EMPTY"
+      }
+    ]
   }
 ]
 
@@ -117,8 +122,13 @@ const merge = function(){
 };
 
 const event = {'event': data.event};
-const other = map(data.add_fields, 'key', 'value');
-
+var other = [];
+if(data.add_fields){
+  other = map(data.add_fields, 'key', 'value');
+}
+else {
+  other = [];
+  }
 
 //success/failure const
 
@@ -234,6 +244,6 @@ scenarios: []
 
 ___NOTES___
 
-Created on 22/04/2020, 06:44:49
+Created on 20/05/2020, 09:28:54
 
 
