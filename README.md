@@ -6,5 +6,7 @@ Useful in creating a user id for google analytics as well as many other uses in 
 
 V1.1 : Released 20th May 2020
     Bug fix: resolved exception error thrown when no additional properties are added. 
+    
+UPDATE 08-09-2021 : We have come across an issue where the Google API for SHA256 is nto returnign a valid base64 encoded result. This means the returned hash is not valid. We will post an update as soon as Google get this fixed. 
 
 120Feet | Digital Analytics Consultants | 120feet.com
