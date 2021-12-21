@@ -149,7 +149,7 @@ hash(data.to_hash, (digest) => {
   if (check('access_globals', 'readwrite', 'dataLayer')) {
     push(dlayer);
     onSuccess();
-  }},() =>{onFailure();});
+  }},() =>{onFailure();},{outputEncoding: 'hex'});
 
 
 ___WEB_PERMISSIONS___
