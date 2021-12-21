@@ -2,8 +2,10 @@ homepage: "https://www.120feet.com"
 documentation: "https://www.120feet.com/2020/04/20/encrypt-user-ids-and-pii-in-your-gtm-tags-cryptome/"
 versions:
     # Latest Version
+    - sha: cf08fdb6658feb04121cf0dfb4d0e3d898847ce6
+      changeNotes: Fixed bug where encryption returned was base64 encoded. Now returns expected string.
+    # Older Versions
     - sha: ac8fab6194d644ce86635e999039b2d259089350
       changeNotes: Fixed bug where additional properties causing exception error
-    # Older Versions
     - sha: 6088fffe7056fa62f2eab8e7354b03ce356df76f
       changeNotes: Initial Release
